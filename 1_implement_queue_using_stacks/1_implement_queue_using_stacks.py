@@ -12,7 +12,8 @@ class MyQueue:
             return val
 
         def peek(self):
-            return self._top[0]
+            val, _ = self._top
+            return val
 
         def is_empty(self):
             return self._top is None
